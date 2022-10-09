@@ -1,0 +1,126 @@
+/* 
+  title: home css file for extra feed and o t h e r s 
+  date: 09 - 10 - 2022 
+  f i l e : ../styles/home.css 
+  mood: 🔒 
+*/
+/*  root colors  */
+body {
+  --twitter-color: #50b7f5;
+  --twitter-background: #e6ecf0;
+}
+/*  feed css  */
+.feed{
+    flex: 0.5;
+    border-right: 1px solid var(--twitter-background);
+    min-width: fit-content;
+    overflow-y: scroll;
+}
+/*  feed header */
+.feed__header{
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 100;
+    border: 1px solid var(--twitter-background);
+    padding: 15px 20px;
+  
+}
+.feed__header h2{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+/* scroll bar  */
+.feed::-webkit-scrollbar{
+    display: none;
+}
+/*  feed  */
+.feed{
+     -ms-overflow-style: none;
+     scrollbar-width: none;
+}
+
+/* tweet box */
+.tweetBox__input img{
+    border-radius: 0.7rem;
+ height: 70px;
+    
+}
+/*  tweet box  */
+.tweetBox{
+    padding-bottom: 10px;
+    border-bottom: 8px solid var(--twitter-background);
+    padding-right: 10px;
+}
+
+.tweetBox form{
+    display: flex;
+    flex-direction: column;
+}
+/*  input  */
+.tweetBox__input{
+    display: flex;
+    padding: 20px;
+}
+
+.tweetBox__input input{
+    flex: 1;
+    margin-left: 20px;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+}
+/*  button */
+.tweetBox__tweetButton{
+    background-color:var(--twitter-color);
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 30px;
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+}
+/*  styling post module  */
+.post__avater img{
+    border-radius: 0.7rem;
+    height: 40px;
+}
+/*  post  */
+.post{
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--twitter-background);
+    padding-bottom: 10px;
+    
+}
+.post__body img{
+ width: 450px;   
+ object-fit: cover;
+ border-radius: 20px;
+}
+
+.post__footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+     
+}
+/*  icons */
+.post__badge{
+    font-size: 1.6rem;
+    color: var(--twitter-color);
+}
+/*  header  */
+.post__headerSpecial{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #808080;
+}
+.post__headerText{
+    font-size: 15px;
+  margin-bottom: 5px;
+  
+}

@@ -1,0 +1,88 @@
+/* 
+Title: twitter clone 
+description: making  this using simple html css  . Not denamic beginner freindly 🙂 
+ date: 09 - 10 - 2022 
+ f i l e : style.css main gloval file 
+*/
+/* import G o o g le font */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto&display=swap");
+/*  basic C  S  S */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+}
+/*  body */
+body {
+    /* scroll behaviur */
+    scroll-behavior: smooth;
+  /*  f on t  */
+  font-family: "Roboto", sans-serif;
+  --twitter-color: #50b7f5;
+  --twitter-background: #e6ecf0;
+}
+/*  main sidebar O p tion  */
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+/* .sidebarOption and icons */
+.sidebarOption .material-icons,
+.fa-twitter {
+  padding: 20px;
+}
+/* .sidebarOption h 2  */
+.sidebarOption h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+.sidebarOption:hover {
+  background: var(--twitter-background);
+  border-radius: 1.2rem;
+  color: var(--twitter-color);
+  transition: color 100ms ease-out;
+}
+/* .sidebarOption a c t i v e  */
+.sidebarOption.active {
+  color: var(--twitter-color);
+}
+/*  tweet button */
+.sidebar__tweet {
+  width: 100%;
+  background-color: var(--twitter-color);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 1.2rem;
+  height: 50px;
+  margin-top: 20px;
+  border: none;
+}
+
+/*  e x t r a  b o d y tag    */
+body {
+  display: flex;
+  height: 100vh;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+/*  sidebar  */
+.sidebar {
+  border-right: 1px solid var(--twitter-background);
+  flex: 0.2;
+  min-width: 250px;
+  margin-top: 20px;
+  padding-right: 20px;
+}
+/*  twitter icon */
+.fa-twitter {
+  color: var(--twitter-color);
+  font-size: 30px;
+}
